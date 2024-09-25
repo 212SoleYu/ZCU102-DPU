@@ -386,7 +386,7 @@ dpu_kernel_2
 
 将调度所用的python代码，需要用到的.xmodel文件传入，并给他配上训练的数据集，就可以开始运行了。
 
-如果在运行过程中出现了Fingerprint的执行错误，说明.xmodel文件出现了不匹配的情况。建议从github Xilinx vitis-ai model-zoo中下载。
+如果在运行过程中出现了Fingerprint的执行错误，说明.xmodel文件出现了不匹配的情况。建议从github Xilinx vitis-ai model-zoo中下载。当前版本下，在ZCU/ZYNQMPSoC上部署的model并未在3.5DPU系列中更新，因此需要去3.0版本中找。后续改动请以官方主页为准。
 
 # Summary
 
