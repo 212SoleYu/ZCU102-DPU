@@ -297,11 +297,11 @@ sudo mkfs.ext4 /dev/sdb2
 完成格式化之后，下一步将这个SD卡的两个分区挂载到linux的文件系统中，通过以下命令：
 
 ```shell
-sudo mkdir /media/yuyunlong/boot
-sudo mount /dev/sdb1/boot
+sudo mkdir /media/dicname/boot
+sudo mount /dev/sdb1 /media/dicname/boot
 
-sudo mkdir /media/yuyunlong/rootfs
-sudo mount /dev/sdb2/rootfs
+sudo mkdir /media/dicname/rootfs
+sudo mount /dev/sdb2 /media/dicname/rootfs
 ```
 
 完成挂载之后，可以通过df-h命令再次确认挂载成功。
