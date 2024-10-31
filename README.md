@@ -133,7 +133,7 @@ petalinux-create -t project -s xxxx.bsp
 cp Vitis-AI/src/petalinux_recipes/recipes-vitis-ai <petalinux project>/project-spec/meta-user/
 ```
 
-由于本文档采用的是vivado工作流，所以在recipes-vitis-ai下应该有两个.bb文件，二者唯一的区别就是一个工作流的默认配置问题，需要将默认的vitis流程修改为vivado流程。将vart_3.5.bb文件备份后直接注释或者删除文件中的
+由于本文档采用的是vivado工作流，所以在recipes-vitis-ai/vart下应该有两个.bb文件，二者唯一的区别就是一个工作流的默认配置问题，需要将默认的vitis流程修改为vivado流程。将vart_3.5.bb文件备份后直接注释或者删除文件中的
 
 ```shell
 #PACKAGECONFIG_append = " vitis"
