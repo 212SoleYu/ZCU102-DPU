@@ -317,7 +317,7 @@ sudo mount /dev/sdb2 /media/dicname/rootfs
 另外，还需要向rootfs分区中解压rootfs.tar.gz文件，此处应该使用命令
 
 ```shell
-sudo tar -zxvf rootfs.tar.gz -C /media/yuyunlong/rootfs
+sudo tar -zxvf rootfs.tar.gz -C /media/dicname/rootfs
 ```
 
 注意tar命令中的z选项不能缺少，实验中有一次可能因为z选项的缺少导致了失败。
@@ -331,8 +331,8 @@ sudo tar -zxvf rootfs.tar.gz -C /media/yuyunlong/rootfs
 再进行一次权限调整：
 
 ```shell
-$ sudo chown root:root /media/yuyunlong/rootfs/
-$ sudo chmod 755 /media/yuyunlong/rootfs/
+$ sudo chown root:root /media/dicname/rootfs/
+$ sudo chmod 755 /media/dicname/rootfs/
 ```
 
 注：对应修改目录名称即可。
